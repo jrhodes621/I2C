@@ -1,0 +1,6 @@
+framework module Pods_ImpressToConnection {
+  umbrella header "Pods-ImpressToConnection-umbrella.h"
+
+  export *
+  module * { export * }
+}

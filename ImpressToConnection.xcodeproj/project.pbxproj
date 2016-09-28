@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		42895EE21D9C09B00032F1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42895EE11D9C09B00032F1DB /* AppDelegate.swift */; };
 		42895EE41D9C09B00032F1DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42895EE31D9C09B00032F1DB /* ViewController.swift */; };
-		42895EE71D9C09B00032F1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42895EE51D9C09B00032F1DB /* Main.storyboard */; };
 		42895EE91D9C09B00032F1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42895EE81D9C09B00032F1DB /* Assets.xcassets */; };
 		42895EEC1D9C09B00032F1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42895EEA1D9C09B00032F1DB /* LaunchScreen.storyboard */; };
 		42895EF71D9C09B00032F1DB /* ImpressToConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42895EF61D9C09B00032F1DB /* ImpressToConnectionTests.swift */; };
 		42895F021D9C09B00032F1DB /* ImpressToConnectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42895F011D9C09B00032F1DB /* ImpressToConnectionUITests.swift */; };
+		42895F101D9C09DB0032F1DB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42895F0F1D9C09DB0032F1DB /* WebViewController.swift */; };
+		80584B481DC10C235AE14EC1 /* Pods_ImpressToConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD29D763DFD4E970E4E805D /* Pods_ImpressToConnection.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32BDC6BF25561DABEC363D5A /* Pods-ImpressToConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpressToConnection.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImpressToConnection/Pods-ImpressToConnection.release.xcconfig"; sourceTree = "<group>"; };
 		42895EDE1D9C09B00032F1DB /* ImpressToConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpressToConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42895EE11D9C09B00032F1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42895EE31D9C09B00032F1DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		42895EE61D9C09B00032F1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42895EE81D9C09B00032F1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42895EEB1D9C09B00032F1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42895EED1D9C09B00032F1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		42895EFD1D9C09B00032F1DB /* ImpressToConnectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImpressToConnectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42895F011D9C09B00032F1DB /* ImpressToConnectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressToConnectionUITests.swift; sourceTree = "<group>"; };
 		42895F031D9C09B00032F1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42895F0F1D9C09DB0032F1DB /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7DD29D763DFD4E970E4E805D /* Pods_ImpressToConnection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImpressToConnection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8F8CB1AF9371E9256738EF /* Pods-ImpressToConnection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpressToConnection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImpressToConnection/Pods-ImpressToConnection.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80584B481DC10C235AE14EC1 /* Pods_ImpressToConnection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07E9F1497D4DE1BBD05D071F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DD29D763DFD4E970E4E805D /* Pods_ImpressToConnection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		309DD5C83105CCE59738F470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F8CB1AF9371E9256738EF /* Pods-ImpressToConnection.debug.xcconfig */,
+				32BDC6BF25561DABEC363D5A /* Pods-ImpressToConnection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		42895ED51D9C09B00032F1DB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				42895EF51D9C09B00032F1DB /* ImpressToConnectionTests */,
 				42895F001D9C09B00032F1DB /* ImpressToConnectionUITests */,
 				42895EDF1D9C09B00032F1DB /* Products */,
+				309DD5C83105CCE59738F470 /* Pods */,
+				07E9F1497D4DE1BBD05D071F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +123,10 @@
 			children = (
 				42895EE11D9C09B00032F1DB /* AppDelegate.swift */,
 				42895EE31D9C09B00032F1DB /* ViewController.swift */,
-				42895EE51D9C09B00032F1DB /* Main.storyboard */,
 				42895EE81D9C09B00032F1DB /* Assets.xcassets */,
 				42895EEA1D9C09B00032F1DB /* LaunchScreen.storyboard */,
 				42895EED1D9C09B00032F1DB /* Info.plist */,
+				42895F0F1D9C09DB0032F1DB /* WebViewController.swift */,
 			);
 			path = ImpressToConnection;
 			sourceTree = "<group>";
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42895F061D9C09B00032F1DB /* Build configuration list for PBXNativeTarget "ImpressToConnection" */;
 			buildPhases = (
+				6C53A5ACC5781CFEB536DF34 /* [CP] Check Pods Manifest.lock */,
 				42895EDA1D9C09B00032F1DB /* Sources */,
 				42895EDB1D9C09B00032F1DB /* Frameworks */,
 				42895EDC1D9C09B00032F1DB /* Resources */,
+				17CF78AE92F6879135233113 /* [CP] Embed Pods Frameworks */,
+				098AAD9DE754581A6783C457 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,7 +258,6 @@
 			files = (
 				42895EEC1D9C09B00032F1DB /* LaunchScreen.storyboard in Resources */,
 				42895EE91D9C09B00032F1DB /* Assets.xcassets in Resources */,
-				42895EE71D9C09B00032F1DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +277,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		098AAD9DE754581A6783C457 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImpressToConnection/Pods-ImpressToConnection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17CF78AE92F6879135233113 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImpressToConnection/Pods-ImpressToConnection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C53A5ACC5781CFEB536DF34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		42895EDA1D9C09B00032F1DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				42895EE41D9C09B00032F1DB /* ViewController.swift in Sources */,
+				42895F101D9C09DB0032F1DB /* WebViewController.swift in Sources */,
 				42895EE21D9C09B00032F1DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +368,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		42895EE51D9C09B00032F1DB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				42895EE61D9C09B00032F1DB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		42895EEA1D9C09B00032F1DB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,6 +466,7 @@
 		};
 		42895F071D9C09B00032F1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8F8CB1AF9371E9256738EF /* Pods-ImpressToConnection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImpressToConnection/Info.plist;
@@ -410,6 +478,7 @@
 		};
 		42895F081D9C09B00032F1DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32BDC6BF25561DABEC363D5A /* Pods-ImpressToConnection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImpressToConnection/Info.plist;
@@ -484,6 +553,7 @@
 				42895F081D9C09B00032F1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42895F091D9C09B00032F1DB /* Build configuration list for PBXNativeTarget "ImpressToConnectionTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +562,7 @@
 				42895F0B1D9C09B00032F1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42895F0C1D9C09B00032F1DB /* Build configuration list for PBXNativeTarget "ImpressToConnectionUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +571,7 @@
 				42895F0E1D9C09B00032F1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

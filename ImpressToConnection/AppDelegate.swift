@@ -13,9 +13,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        presentWebView(urlString: "https://impressweb.azurewebsites.net", title: "Impress to Connect")
         return true
     }
 
@@ -40,7 +40,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    func presentWebView(urlString urlString: String, title: String) {
+        let cookieParams = [
+            NSHTTPCookieDomain : "impressweb.azurewebsites.net",
+            NSHTTPCookiePath : "/",
+            NSHTTPCookieName : "hidenav",
+            NSHTTPCookieValue : "true"
+        ]
+        
+        let cookie = NSHTTPCookie(properties: cookieParams)
+        let cookies = [cookie].flatMap { $0 }
+        
+        let controller = WebViewController(urlString: urlString, siteTitle: title, cookies: cookies)
+        let navigationController = UINavigationController(rootViewController: controller)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
 
+    }
 
 }
 
