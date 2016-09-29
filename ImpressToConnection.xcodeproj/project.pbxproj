@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		32BDC6BF25561DABEC363D5A /* Pods-ImpressToConnection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImpressToConnection.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImpressToConnection/Pods-ImpressToConnection.release.xcconfig"; sourceTree = "<group>"; };
-		42895EDE1D9C09B00032F1DB /* ImpressToConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImpressToConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42895EDE1D9C09B00032F1DB /* Impress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Impress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42895EE11D9C09B00032F1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42895EE31D9C09B00032F1DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42895EE81D9C09B00032F1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		42895EDF1D9C09B00032F1DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42895EDE1D9C09B00032F1DB /* ImpressToConnection.app */,
+				42895EDE1D9C09B00032F1DB /* Impress.app */,
 				42895EF21D9C09B00032F1DB /* ImpressToConnectionTests.xctest */,
 				42895EFD1D9C09B00032F1DB /* ImpressToConnectionUITests.xctest */,
 			);
@@ -169,7 +169,7 @@
 			);
 			name = ImpressToConnection;
 			productName = ImpressToConnection;
-			productReference = 42895EDE1D9C09B00032F1DB /* ImpressToConnection.app */;
+			productReference = 42895EDE1D9C09B00032F1DB /* Impress.app */;
 			productType = "com.apple.product-type.application";
 		};
 		42895EF11D9C09B00032F1DB /* ImpressToConnectionTests */ = {
@@ -472,7 +472,7 @@
 				INFOPLIST_FILE = ImpressToConnection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Consult2Hire.ImpressToConnection;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Impress;
 			};
 			name = Debug;
 		};
@@ -484,7 +484,7 @@
 				INFOPLIST_FILE = ImpressToConnection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Consult2Hire.ImpressToConnection;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Impress;
 			};
 			name = Release;
 		};
